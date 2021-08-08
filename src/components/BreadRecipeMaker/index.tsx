@@ -1,5 +1,4 @@
-import { FunctionComponent } from 'react'; // importing FunctionComponent
-import React from 'react';
+import React,{ FunctionComponent } from 'react';
 import Button from '@material-ui/core/Button';
 import { FlourSelection } from '../FlourSelection';
 import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
@@ -15,7 +14,7 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         fab: {
             position: 'absolute',
-            top: theme.spacing(8),
+            top: theme.spacing(1),
             margin: theme.spacing(1),
             right: theme.spacing(2),
             backgroundColor: '#ff5722'

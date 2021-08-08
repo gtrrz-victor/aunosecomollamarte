@@ -1,0 +1,1 @@
+export const IFrame = () =>  <iframe title="wordpress" src="https://aunosecomollamarte.wordpress.com/" frameBorder="0"></iframe>
