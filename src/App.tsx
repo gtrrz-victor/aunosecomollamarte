@@ -6,7 +6,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route
 } from "react-router-dom";
@@ -54,7 +54,7 @@ function App () {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <Router>
+        <HashRouter>
           <Switch>
             <Route path="/bread-recipe-maker">
               <ScopedCssBaseline>
@@ -78,7 +78,7 @@ function App () {
                   aria-label="add"
                   color="secondary"
                   className={classes.gotobreadMaker}
-                  href="/bread-recipe-maker"
+                  href="#/bread-recipe-maker"
                 >
                   <NavigationIcon className={classes.extendedIcon} />
                   Go To Bread Recipe Maker
@@ -87,7 +87,7 @@ function App () {
               <IFrame />
             </Route>
           </Switch>
-        </Router>
+        </HashRouter>
       </ThemeProvider>
     </div>
   );
